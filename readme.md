@@ -1,1 +1,2 @@
-2D game in GODOT Engine
+# hedgehog-platformer
+2D Game in GODOT Engine

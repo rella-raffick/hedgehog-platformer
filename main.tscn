@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://1ke4035hbhgi"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_ll3d6"]
+[ext_resource type="PackedScene" uid="uid://c68ctcht3k3bb" path="res://bg.tscn" id="2_o2r5c"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_ll3d6")
+metadata/_edit_horizontal_guides_ = [917.0, 969.0]
+
+[node name="Play" type="Button" parent="."]
+offset_left = 330.0
+offset_top = 522.0
+offset_right = 489.0
+offset_bottom = 591.0
+tooltip_text = "This is Play Button"
+text = "Play"
+
+[node name="Play2" type="Button" parent="."]
+offset_left = 658.0
+offset_top = 521.0
+offset_right = 817.0
+offset_bottom = 588.0
+tooltip_text = "This is Play Button"
+text = "Quit
+"
+
+[node name="Label" type="Label" parent="."]
+offset_left = 497.0
+offset_top = 465.0
+offset_right = 664.0
+offset_bottom = 488.0
+text = "Hedgehog Platformer"
+
+[node name="BG" parent="." instance=ExtResource("2_o2r5c")]
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Play2" to="." method="_on_play_pressed"]
